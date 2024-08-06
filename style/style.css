@@ -25,7 +25,7 @@ body {
   color: rgb(79, 231, 24);
 }
 
-button {
+.title-button {
   color: rgb(255, 255, 255);
   background-color: #45433d;
   border: 0;
@@ -40,19 +40,28 @@ button {
   padding: 1em;
 }
 
-a,
 li {
   list-style-type: none;
 }
 
-.intro {
-  width: 100%;
+.intro p {
+  text-align: justify;
 }
 
 .main-section h3 {
   font-family: "Playwrite BE VLG", cursive;
-  font-size: 20px;
+  font-size: 22px;
   color: rgb(63, 53, 12);
+  padding: 9px;
+}
+
+.history-section {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  text-align: justify;
+  background-color: rgb(245, 245, 245);
 }
 
 .img-palace {
@@ -60,35 +69,61 @@ li {
 }
 
 .img-war {
-  width: 200px;
-  float: left;
-  padding: 1rem;
+  width: 100%;
+  display: block;
 }
 
 .img-me {
   width: 100%;
 }
 
-.intro,
-.events,
-ul,
-footer,
-.history,
-.about-me,
-.about-website {
-  padding: 10px 0;
-  font-size: 12px;
+.intro {
+  padding: 10px 20px 30px;
+  font-size: 15px;
   line-height: 18px;
   text-align: justify;
 }
+.events-title {
+  text-align: center;
+}
 
-.history {
+.places {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.card {
+  text-align: left;
+  margin: 10px 0 0;
+}
+
+.card-body {
+  padding: 20px;
+  background-color: white;
+}
+
+.card-body p {
+  margin: 10px 0;
+}
+
+.card-footer {
+  text-align: center;
+  font-size: 10px;
+  font-weight: 500;
+  padding: 5px 0;
+  background-color: #45433d;
+  color: rgb(79, 231, 24);
 }
 
 footer {
   background-color: rgb(83, 163, 53);
   color: white;
-  padding: 1rem;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  column-gap: 50px;
+  text-align: left;
 }
 footer p {
   font-size: 13px;
@@ -97,5 +132,5 @@ footer p {
 
 footer h3 {
   font-family: "Playwrite BE VLG", cursive;
-  font-size: 16px;
+  font-size: 13px;
 }
